@@ -10,3 +10,69 @@
     --grayish__blue: hsl(229, 8%, 60%);
     --very__dark__blue: hsl(229, 31%, 21%);
 }
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-style {
+    font-family: var(--theme__font);
+    font-size: var(--font__size);
+}
+
+html {
+    height: 100%;
+}
+
+/*body {
+    min-height: 100vh;
+}*/
+
+html, body {
+    @include font-style();
+    margin: 0;
+    padding: 0;
+}
+
+#bookmark__page {
+    header {
+        nav {
+            @include flex-center();
+            #navbarNav {
+                justify-content: flex-end;
+                ul {
+                    gap: 30px;
+                    li {
+                        a {
+                            font-size: 12px;
+                            color: var(--black);
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            &:hover {
+                                color: var(--soft__red);
+                            }
+                        }
+                        &.user__login__button {
+                            background-color: var(--soft__red);
+                            border: solid 2px var(--soft__red);
+                            border-radius: 5px;
+                            a {
+                                color: var(--white);
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                &:hover {
+                                    color: var(--soft__red);
+                                }
+                            }
+                            &:hover {
+                                background-color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
