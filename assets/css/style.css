@@ -4,6 +4,7 @@
   --font__size: 18px;
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
+  --gray: hsl(0deg 0% 96.86%);
   --soft__blue: hsl(231, 69%, 60%);
   --soft__red: hsl(0, 94%, 66%);
   --grayish__blue: hsl(229, 8%, 60%);
@@ -22,6 +23,14 @@ html, body {
   font-size: var(--font__size);
   margin: 0;
   padding: 0;
+}
+
+br.small {
+  display: none;
+}
+
+br.large {
+  display: block;
 }
 
 #bookmark__page header nav {
@@ -46,7 +55,7 @@ html, body {
 }
 #bookmark__page header nav #navbarNav ul li.user__login__button {
   background-color: var(--soft__red);
-  border: solid 2px var(--soft__red);
+  border: solid 2px transparent;
   border-radius: 5px;
 }
 #bookmark__page header nav #navbarNav ul li.user__login__button a {
@@ -59,4 +68,77 @@ html, body {
 }
 #bookmark__page header nav #navbarNav ul li.user__login__button:hover {
   background-color: var(--white);
+  border: solid 2px var(--soft__red);
+}
+#bookmark__page main #main__hero {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc {
+  flex-basis: 50%;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text span {
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text p {
+  color: var(--grayish__blue);
+  font-size: 28px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a {
+  font-size: 20px;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 25px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a:nth-child(1) {
+  background-color: var(--soft__blue);
+  color: var(--white);
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a:nth-child(1):hover {
+  border: solid 2px var(--soft__blue);
+  background-color: var(--white);
+  color: var(--soft__blue);
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a:nth-child(2) {
+  background-color: var(--gray);
+  color: var(--very__dark__blue);
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a:nth-child(2):hover {
+  border: solid 2px var(--very__dark__blue);
+  background-color: var(--white);
+}
+#bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.image img {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  br.small {
+    display: block;
+  }
+  br.large {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
