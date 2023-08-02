@@ -72,7 +72,7 @@ br.large {
 }
 #bookmark__page main #main__hero {
   margin-top: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content {
   display: flex;
@@ -133,6 +133,10 @@ br.large {
 #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.image img {
   width: 100%;
 }
+#bookmark__page main #main__features {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 #bookmark__page main #main__features .headline {
   display: flex;
   align-items: center;
@@ -178,13 +182,68 @@ br.large {
   outline: 0;
   width: 100%;
   padding-bottom: 20px;
+  font-weight: 500;
+  color: var(--grayish__blue);
 }
 #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link.active {
   border-bottom: solid 3px var(--soft__red);
-  font-weight: 500;
+  color: var(--black);
+}
+#bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link:hover {
+  border-bottom: solid 3px var(--soft__red);
+  color: var(--black);
 }
 #bookmark__page main #main__features .content .tab-content {
-  margin-top: 30px;
+  margin-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .image {
+  flex-basis: 50%;
+  text-align: center;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .image img {
+  width: 100%;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  flex-basis: 50%;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .text span {
+  color: var(--black);
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .text p {
+  color: var(--grayish__blue);
+  font-size: 20px;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .text a {
+  font-size: 16px;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  background-color: var(--soft__blue);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+#bookmark__page main #main__features .content .tab-content .tab-pane .content .text a:hover {
+  border: solid 2px var(--soft__blue);
+  background-color: var(--white);
+  color: var(--soft__blue);
 }
 
 @media (max-width: 576px) {
