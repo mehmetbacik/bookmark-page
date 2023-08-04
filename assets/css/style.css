@@ -72,7 +72,7 @@ br.large {
 }
 #bookmark__page main #main__hero {
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content {
   display: flex;
@@ -134,8 +134,7 @@ br.large {
   width: 100%;
 }
 #bookmark__page main #main__features {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 #bookmark__page main #main__features .headline {
   display: flex;
@@ -246,8 +245,7 @@ br.large {
   color: var(--soft__blue);
 }
 #bookmark__page main #main__extension {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 #bookmark__page main #main__extension .headline {
   display: flex;
@@ -274,7 +272,7 @@ br.large {
   padding-right: 20%;
 }
 #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item {
-  padding: 20px;
+  padding: 15px;
 }
 #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child {
   display: flex;
@@ -320,7 +318,36 @@ br.large {
   background-color: var(--white);
   color: var(--soft__blue);
 }
-
+#bookmark__page main #main__questions {
+  margin-bottom: 150px;
+}
+#bookmark__page main #main__questions .headline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+#bookmark__page main #main__questions .headline span {
+  color: var(--black);
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+#bookmark__page main #main__questions .headline p {
+  color: var(--grayish__blue);
+  font-size: 20px;
+  text-align: center;
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-collapse .accordion-body {
+  text-align: center;
+}
 @media (max-width: 576px) {
   br.small {
     display: block;
