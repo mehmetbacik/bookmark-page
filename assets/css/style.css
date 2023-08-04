@@ -419,6 +419,19 @@ br.large {
   background-color: var(--white);
   color: var(--soft__blue);
 }
+#bookmark__page footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#bookmark__page footer #footer__subscribe {
+  width: 100%;
+  background-color: var(--soft__blue);
+}
+#bookmark__page footer #footer__nav {
+  width: 100%;
+  background-color: var(--very__dark__blue);
+}
 
 @media (max-width: 576px) {
   br.small {
