@@ -340,14 +340,86 @@ br.large {
   font-size: 20px;
   text-align: center;
 }
+#bookmark__page main #main__questions .content {
+  padding-left: 34%;
+  padding-right: 34%;
+}
 #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0px;
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px var(--grayish__blue);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  color: var(--soft__red);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  color: var(--black);
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  content: url("/assets/img/icon-arrow.svg");
+  filter: none;
+  transform: rotate(0);
+}
+#bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: url("/assets/img/icon-arrow.svg");
+  filter: invert(76%) sepia(64%) saturate(6678%) hue-rotate(328deg) brightness(101%) contrast(95%);
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
 #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-collapse .accordion-body {
-  text-align: center;
+  color: var(--grayish__blue);
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
+#bookmark__page main #main__questions .content .accordion .accordion-item:last-child {
+  border-bottom: solid 1px var(--grayish__blue);
+}
+#bookmark__page main #main__questions .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#bookmark__page main #main__questions .link a {
+  font-size: 16px;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  background-color: var(--soft__blue);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+#bookmark__page main #main__questions .link a:hover {
+  border: solid 2px var(--soft__blue);
+  background-color: var(--white);
+  color: var(--soft__blue);
+}
+
 @media (max-width: 576px) {
   br.small {
     display: block;
