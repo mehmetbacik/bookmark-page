@@ -7,7 +7,7 @@ var swiper = new Swiper(".hero__swiper", {
         el: ".swiper-pagination",
     },*/
     autoplay: {
-        delay: 1000,
+        delay: 2000,
     },
     breakpoints: {
         0: {
@@ -41,7 +41,7 @@ var swiper = new Swiper(".extension__swiper", {
         el: ".swiper-pagination",
     },*/
     autoplay: {
-        delay: 1000,
+        delay: 2000,
     },
     breakpoints: {
         0: {
@@ -50,17 +50,17 @@ var swiper = new Swiper(".extension__swiper", {
             slidesPerColumn: 1,
         },
         640: {
-            spaceBetween: 30,
+            spaceBetween: 50,
             slidesPerView: 1,
             slidesPerColumn: 1,
         },
         768: {
-            spaceBetween: 30,
+            spaceBetween: 50,
             slidesPerView: 1,
             slidesPerColumn: 3,
         },
         1024: {
-            spaceBetween: 30,
+            spaceBetween: 50,
             slidesPerView: 3,
         },
     }
