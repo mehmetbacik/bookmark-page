@@ -465,6 +465,49 @@ br.large {
         #footer__subscribe {
             width: 100%;
             background-color: var(--soft__blue);
+            padding-bottom: 60px;
+            .headline {
+                color: var(--white);
+                text-align: center;
+                margin-top: 80px;
+                margin-bottom: 50px;
+                span {
+                    font-weight: 500;
+                    font-size: 45px;
+                    line-height: normal;
+                }
+                p {
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+            .content {
+                .input-group {
+                    @include flex-center();
+                    gap: 20px;
+                    input {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-radius: 5px;
+                    }
+                    span {
+                        button {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: solid 2px var(--soft__red);
+                            background-color: var(--soft__red);
+                            color: var(--white);
+                            font-weight: 500;
+                            &:hover {
+                                background-color: var(--white);
+                                color: var(--soft__red);
+                            }
+                        }
+                    }
+                }
+            }
         }
         #footer__nav {
             width: 100%;
