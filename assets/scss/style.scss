@@ -506,6 +506,23 @@ br.large {
         #footer__nav {
             width: 100%;
             background-color: var(--very__dark__blue);
+            .navbar {
+                .navbar-collapse {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                text-transform: uppercase;
+                                color: var(--white);
+                                font-size: 16px
+                            }
+                        }
+                    }
+                    .navbar-text {
+                        @include flex-center();
+                        gap: 30px;
+                    }
+                }
+            }
         }
     }
 }
