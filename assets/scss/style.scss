@@ -183,7 +183,6 @@ br.large {
                         justify-content: space-between;
                         border-bottom: solid 1px var(--grayish__blue);
                         .nav-item {
-                            width: 220px;
                             @include flex-center();
                             justify-content: center;
                             .nav-link {
@@ -507,19 +506,23 @@ br.large {
             width: 100%;
             background-color: var(--very__dark__blue);
             .navbar {
+                .navbar-brand {
+                    margin-right: 4rem;
+                }
                 .navbar-collapse {
                     .navbar-nav {
+                        gap: 30px;
                         .nav-item {
                             .nav-link {
                                 text-transform: uppercase;
                                 color: var(--white);
-                                font-size: 16px
+                                font-size: 12px
                             }
                         }
                     }
                     .navbar-text {
                         @include flex-center();
-                        gap: 30px;
+                        gap: 40px;
                     }
                 }
             }
@@ -528,17 +531,12 @@ br.large {
 }
 
 
-
-// Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) { }
 
-// Large devices (desktops, 992px and up)
 @media (max-width: 992px) { }
 
-// Medium devices (tablets, 768px and up)
 @media (max-width: 768px) { }
 
-// Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) { 
     br.small {
         display: block;
