@@ -777,3 +777,59 @@ br.large {
         }
     }
 }
+
+@media (max-width: 375px) { 
+    #bookmark__page {
+        main {
+            #main__extension {
+                .headline {
+                    span {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                .content {
+                    .extension__swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .slide-item {
+                                    padding: 0px;
+                                    .slide-child {
+                                        .dot {
+                                            display: none;
+                                        }
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #main__questions {
+                .content {
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    font-size: 15px;
+                                }
+                            }
+                            .accordion-collapse {
+                                .accordion-body {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
