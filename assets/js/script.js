@@ -56,8 +56,8 @@ var swiper = new Swiper(".extension__swiper", {
         },
         768: {
             spaceBetween: 50,
-            slidesPerView: 1,
-            slidesPerColumn: 3,
+            slidesPerView: 2,
+            slidesPerColumn: 1,
         },
         1024: {
             spaceBetween: 50,

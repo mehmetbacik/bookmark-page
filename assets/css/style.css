@@ -472,12 +472,164 @@ br.large {
   color: var(--white);
   font-size: 12px;
 }
+#bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: var(--soft__red);
+}
 #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+#bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text a img:hover {
+  filter: invert(50%) sepia(11%) saturate(3236%) hue-rotate(314deg) brightness(99%) contrast(97%);
+}
 
+@media (max-width: 768px) {
+  br.large {
+    display: none;
+  }
+  #bookmark__page header nav .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  #bookmark__page header nav .navbar-toggler .navbar-toggler-icon {
+    background-image: url(/assets/img/icon-hamburger.svg);
+    background-size: inherit;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text span {
+    font-size: 30px;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text p {
+    font-size: 16px;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  #bookmark__page main #main__features .headline span {
+    font-size: 22px;
+  }
+  #bookmark__page main #main__features .headline p {
+    font-size: 14px;
+  }
+  #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link {
+    font-size: 14px;
+    min-width: 174px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text span {
+    font-size: 20px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text p {
+    font-size: 13px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text a {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+  #bookmark__page main #main__extension .headline span {
+    font-size: 22px;
+  }
+  #bookmark__page main #main__extension .headline p {
+    font-size: 14px;
+  }
+  #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item {
+    padding: 5px;
+  }
+  #bookmark__page main #main__questions .headline span {
+    font-size: 22px;
+  }
+  #bookmark__page main #main__questions .headline p {
+    font-size: 14px;
+  }
+  #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+  }
+  #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 12px;
+  }
+  #bookmark__page main #main__questions .link a {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  #bookmark__page footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #bookmark__page footer #footer__subscribe {
+    width: 100%;
+    background-color: var(--soft__blue);
+    padding-bottom: 60px;
+  }
+  #bookmark__page footer #footer__subscribe .headline {
+    color: var(--white);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  #bookmark__page footer #footer__subscribe .headline span {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: normal;
+  }
+  #bookmark__page footer #footer__subscribe .headline p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group span button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px var(--soft__red);
+    background-color: var(--soft__red);
+    color: var(--white);
+    font-weight: 500;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group span button:hover {
+    background-color: var(--white);
+    color: var(--soft__red);
+  }
+  #bookmark__page footer #footer__nav {
+    width: 100%;
+    background-color: var(--very__dark__blue);
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-brand {
+    margin-right: 4rem;
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse {
+    display: block;
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav {
+    gap: 30px;
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 12px;
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: var(--soft__red);
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text a img:hover {
+    filter: invert(50%) sepia(11%) saturate(3236%) hue-rotate(314deg) brightness(99%) contrast(97%);
+  }
+}
 @media (max-width: 576px) {
   br.small {
     display: block;
