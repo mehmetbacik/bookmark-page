@@ -551,83 +551,31 @@ br.large {
     font-size: 13px;
     padding: 10px 20px;
   }
-  #bookmark__page footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  #bookmark__page footer #footer__subscribe {
-    width: 100%;
-    background-color: var(--soft__blue);
-    padding-bottom: 60px;
-  }
-  #bookmark__page footer #footer__subscribe .headline {
-    color: var(--white);
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-  }
   #bookmark__page footer #footer__subscribe .headline span {
-    font-weight: 500;
-    font-size: 45px;
-    line-height: normal;
+    font-size: 30px;
   }
   #bookmark__page footer #footer__subscribe .headline p {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 15px;
   }
-  #bookmark__page footer #footer__subscribe .content .input-group {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  #bookmark__page footer #footer__subscribe .content .input-group input {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-  }
-  #bookmark__page footer #footer__subscribe .content .input-group span button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: solid 2px var(--soft__red);
-    background-color: var(--soft__red);
-    color: var(--white);
-    font-weight: 500;
-  }
-  #bookmark__page footer #footer__subscribe .content .input-group span button:hover {
-    background-color: var(--white);
-    color: var(--soft__red);
-  }
-  #bookmark__page footer #footer__nav {
-    width: 100%;
-    background-color: var(--very__dark__blue);
+  #bookmark__page footer #footer__nav .navbar {
+    flex-direction: column;
   }
   #bookmark__page footer #footer__nav .navbar .navbar-brand {
-    margin-right: 4rem;
+    margin-right: 0rem;
+    padding-bottom: 30px;
   }
   #bookmark__page footer #footer__nav .navbar .navbar-collapse {
     display: block;
   }
   #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav {
-    gap: 30px;
+    gap: 5px;
   }
   #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-    text-transform: uppercase;
-    color: var(--white);
-    font-size: 12px;
-  }
-  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    color: var(--soft__red);
+    text-align: center;
+    font-size: 16px;
   }
   #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  #bookmark__page footer #footer__nav .navbar .navbar-collapse .navbar-text a img:hover {
-    filter: invert(50%) sepia(11%) saturate(3236%) hue-rotate(314deg) brightness(99%) contrast(97%);
+    padding-top: 30px;
   }
 }
 @media (max-width: 576px) {
