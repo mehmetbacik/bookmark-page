@@ -484,6 +484,74 @@ br.large {
   filter: invert(50%) sepia(11%) saturate(3236%) hue-rotate(314deg) brightness(99%) contrast(97%);
 }
 
+@media (max-width: 1200px) {
+  br.large {
+    display: none;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text span {
+    font-size: 40px;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text p {
+    font-size: 20px;
+  }
+  #bookmark__page main #main__hero .hero__swiper .swiper-wrapper .swiper-slide .slide__content .sc.text .button__group a {
+    font-size: 16px;
+    padding: 15px 15px;
+  }
+  #bookmark__page main #main__features .headline span {
+    font-size: 30px;
+  }
+  #bookmark__page main #main__features .headline p {
+    font-size: 18px;
+  }
+  #bookmark__page main #main__features .content .tab-headline #myTab .nav-item {
+    width: 175px;
+  }
+  #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link {
+    font-size: 14px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text span {
+    font-size: 25px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text p {
+    font-size: 16px;
+  }
+  #bookmark__page main #main__features .content .tab-content .tab-pane .content .text a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  #bookmark__page main #main__extension .headline span {
+    font-size: 30px;
+  }
+  #bookmark__page main #main__extension .headline p {
+    font-size: 18px;
+  }
+  #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item {
+    padding: 5px;
+  }
+  #bookmark__page main #main__questions .headline span {
+    font-size: 30px;
+  }
+  #bookmark__page main #main__questions .headline p {
+    font-size: 18px;
+  }
+  #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+  }
+  #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 14px;
+  }
+  #bookmark__page main #main__questions .link a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  #bookmark__page footer #footer__subscribe .headline span {
+    font-size: 30px;
+  }
+  #bookmark__page footer #footer__subscribe .headline p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 992px) {
   br.large {
     display: none;
@@ -513,7 +581,10 @@ br.large {
     font-size: 16px;
   }
   #bookmark__page main #main__features .content .tab-headline #myTab .nav-item {
-    width: 214px;
+    width: 188px;
+  }
+  #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link {
+    font-size: 15px;
   }
   #bookmark__page main #main__features .content .tab-content .tab-pane .content .text span {
     font-size: 22px;
