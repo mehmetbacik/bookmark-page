@@ -10,6 +10,7 @@
     --soft__red: hsl(0, 94%, 66%);
     --grayish__blue: hsl(229, 8%, 60%);
     --very__dark__blue: hsl(229, 31%, 21%);
+    --dot: hsl(230.77deg 56.52% 90.98%);
 }
 
 @mixin flex-center {
@@ -185,6 +186,7 @@ br.large {
                         .nav-item {
                             @include flex-center();
                             justify-content: center;
+                            width: 214px;
                             .nav-link {
                                 border-top: 0;
                                 border-left: 0;
@@ -291,7 +293,7 @@ br.large {
                     .swiper-wrapper {
                         .swiper-slide {
                             .slide-item {
-                                padding: 25px;
+                                padding: 15px;
                                 .slide-child {
                                     @include flex-center();
                                     flex-direction: column;
@@ -313,9 +315,8 @@ br.large {
                                         padding-top: 8px;
                                     }
                                     .dot {
-                                        &:before {
-                                            content:url('/assets/img/bg-dots.svg');
-                                        }
+                                        width: 100%;
+                                        border-top: dotted 5px var(--dot);
                                     }
                                     a {
                                         font-size: 16px;
@@ -738,7 +739,7 @@ br.large {
                     .tab-headline {
                         #myTab {
                             .nav-item {
-                                width: 188px;
+                                width: 150px;
                                 .nav-link {
                                     font-size: 15px;
                                 }
@@ -1297,9 +1298,6 @@ br.large {
                                 .slide-item {
                                     padding: 0px;
                                     .slide-child {
-                                        .dot {
-                                            display: none;
-                                        }
                                         a {
                                             font-size: 12px;
                                         }

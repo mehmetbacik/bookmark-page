@@ -9,6 +9,7 @@
   --soft__red: hsl(0, 94%, 66%);
   --grayish__blue: hsl(229, 8%, 60%);
   --very__dark__blue: hsl(229, 31%, 21%);
+  --dot: hsl(230.77deg 56.52% 90.98%);
 }
 
 html {
@@ -165,6 +166,7 @@ br.large {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 214px;
 }
 #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link {
   border-top: 0;
@@ -265,7 +267,7 @@ br.large {
   margin-top: 60px;
 }
 #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item {
-  padding: 25px;
+  padding: 15px;
 }
 #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child {
   display: flex;
@@ -289,8 +291,9 @@ br.large {
   text-align: center;
   padding-top: 8px;
 }
-#bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child .dot:before {
-  content: url("/assets/img/bg-dots.svg");
+#bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child .dot {
+  width: 100%;
+  border-top: dotted 5px var(--dot);
 }
 #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child a {
   font-size: 16px;
@@ -581,7 +584,7 @@ br.large {
     font-size: 16px;
   }
   #bookmark__page main #main__features .content .tab-headline #myTab .nav-item {
-    width: 188px;
+    width: 150px;
   }
   #bookmark__page main #main__features .content .tab-headline #myTab .nav-item .nav-link {
     font-size: 15px;
@@ -929,9 +932,6 @@ br.large {
   }
   #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item {
     padding: 0px;
-  }
-  #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child .dot {
-    display: none;
   }
   #bookmark__page main #main__extension .content .extension__swiper .swiper-wrapper .swiper-slide .slide-item .slide-child a {
     font-size: 12px;
