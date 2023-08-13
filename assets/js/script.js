@@ -1,3 +1,5 @@
+/*Hero*/
+
 var swiper = new Swiper(".hero__swiper", {
     /*navigation: {
         nextEl: ".swiper-button-next",
@@ -32,6 +34,10 @@ var swiper = new Swiper(".hero__swiper", {
     }
 });
 
+/*Hero*/
+
+/*Extension*/
+
 var swiper = new Swiper(".extension__swiper", {
     /*navigation: {
         nextEl: ".swiper-button-next",
@@ -65,3 +71,25 @@ var swiper = new Swiper(".extension__swiper", {
         },
     }
 });
+
+/*Extension*/
+
+/*Contact*/
+
+$(document).ready(function(){
+    $("input").blur(function() {
+        if(!$(this).val()){
+            $("#emailError").css("display","block");
+            $("#emailError").empty().append("<div class='error'>Whoops. make sure it's an email</div>");
+            $("#email").attr("aria-invalid","true");
+            }
+            else
+            {
+            $("#emailError").css("display","none");
+            $("#emailError").text("");
+            $("#email").attr("aria-invalid","false");
+        }
+    })
+});
+
+/*Contact*/

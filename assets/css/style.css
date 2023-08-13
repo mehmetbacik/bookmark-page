@@ -441,14 +441,34 @@ br.large {
 #bookmark__page footer #footer__subscribe .content .input-group {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
-#bookmark__page footer #footer__subscribe .content .input-group input {
+#bookmark__page footer #footer__subscribe .content .input-group .email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#bookmark__page footer #footer__subscribe .content .input-group .email input {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
 }
-#bookmark__page footer #footer__subscribe .content .input-group span button {
+#bookmark__page footer #footer__subscribe .content .input-group .email #emailError {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+}
+#bookmark__page footer #footer__subscribe .content .input-group .email #emailError .error {
+  background-color: var(--soft__red);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--white);
+  font-style: italic;
+  font-size: 14px;
+}
+#bookmark__page footer #footer__subscribe .content .input-group .button span button {
   padding-top: 10px;
   padding-bottom: 10px;
   border: solid 2px var(--soft__red);
@@ -456,7 +476,7 @@ br.large {
   color: var(--white);
   font-weight: 500;
 }
-#bookmark__page footer #footer__subscribe .content .input-group span button:hover {
+#bookmark__page footer #footer__subscribe .content .input-group .button span button:hover {
   background-color: var(--white);
   color: var(--soft__red);
 }

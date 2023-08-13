@@ -480,23 +480,44 @@ br.large {
             .content {
                 .input-group {
                     @include flex-center();
+                    justify-content: center;
                     gap: 20px;
-                    input {
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        border-radius: 5px;
-                    }
-                    span {
-                        button {
+                    .email {
+                        @include flex-center();
+                        flex-direction: column;
+                        position: relative;
+                        input {
                             padding-top: 10px;
                             padding-bottom: 10px;
-                            border: solid 2px var(--soft__red);
-                            background-color: var(--soft__red);
-                            color: var(--white);
-                            font-weight: 500;
-                            &:hover {
-                                background-color: var(--white);
-                                color: var(--soft__red);
+                            border-radius: 5px;
+                        }
+                        #emailError {
+                            position: absolute;
+                            width: 100%;
+                            bottom: -30px;
+                            .error {
+                                background-color: var(--soft__red);
+                                padding: 5px;
+                                border-radius: 5px;
+                                color: var(--white);
+                                font-style: italic;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .button {
+                        span {
+                            button {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                border: solid 2px var(--soft__red);
+                                background-color: var(--soft__red);
+                                color: var(--white);
+                                font-weight: 500;
+                                &:hover {
+                                    background-color: var(--white);
+                                    color: var(--soft__red);
+                                }
                             }
                         }
                     }
