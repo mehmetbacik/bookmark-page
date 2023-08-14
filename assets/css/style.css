@@ -475,7 +475,7 @@ br.large {
   background-color: var(--soft__red);
   color: var(--white);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 #bookmark__page footer #footer__subscribe .content .input-group .button div button:hover {
   background-color: var(--white);
@@ -1073,5 +1073,11 @@ br.large {
   }
   #bookmark__page main #main__questions .content .accordion .accordion-item .accordion-collapse .accordion-body {
     font-size: 12px;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group .email #emailError {
+    bottom: -25px;
+  }
+  #bookmark__page footer #footer__subscribe .content .input-group .email #emailError .error {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

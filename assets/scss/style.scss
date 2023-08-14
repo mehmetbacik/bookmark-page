@@ -514,7 +514,7 @@ br.large {
                                 background-color: var(--soft__red);
                                 color: var(--white);
                                 font-weight: 500;
-                                font-size: 16px;
+                                font-size: 14px;
                                 &:hover {
                                     background-color: var(--white);
                                     color: var(--soft__red);
@@ -1454,6 +1454,22 @@ br.large {
                             .accordion-collapse {
                                 .accordion-body {
                                     font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            #footer__subscribe {
+                .content {
+                    .input-group {
+                        .email {
+                            #emailError {
+                                bottom: -25px;
+                                .error {
+                                    font-size: 10px;
                                 }
                             }
                         }
