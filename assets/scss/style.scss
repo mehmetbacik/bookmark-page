@@ -719,6 +719,55 @@ br.large {
                         background-size: inherit;
                     }
                 }
+                #navbarNav {
+                    background-color: var(--very__dark__blue);
+                    padding: 30px;
+                    justify-content: flex-end;
+                    ul {
+                        gap: 30px;
+                        li {
+                            a {
+                                font-size: 20px;
+                                color: var(--white);
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-weight: 100;
+                                letter-spacing: 2px;
+                                border-bottom: solid 1px var(--white);
+                                padding-bottom: 35px;
+                                &:hover {
+                                    color: var(--white);
+                                }
+                            }
+                            &.user__login__button {
+                                background-color: transparent;
+                                border: solid 1px var(--white);
+                                border-radius: 5px;
+                                @include flex-center();
+                                justify-content: center;
+                                a {
+                                    color: var(--white);
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    padding-bottom: 8px;
+                                    border-bottom: none;
+                                    &:hover {
+                                        color: var(--white);
+                                    }
+                                }
+                                &:hover {
+                                    background-color: transparent;
+                                    border: solid 1px var(--white);
+                                }
+                            }
+                        }
+                    }
+                    .header-social {
+                        margin-top: 50px;
+                        justify-content: center;
+                        gap: 30px;
+                    }
+                }
             }
         }
         main {
@@ -895,6 +944,55 @@ br.large {
                     .navbar-toggler-icon {
                         background-image: url(/assets/img/icon-hamburger.svg);
                         background-size: inherit;
+                    }
+                }
+                #navbarNav {
+                    background-color: var(--very__dark__blue);
+                    padding: 30px;
+                    justify-content: flex-end;
+                    ul {
+                        gap: 30px;
+                        li {
+                            a {
+                                font-size: 16px;
+                                color: var(--white);
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-weight: 100;
+                                letter-spacing: 2px;
+                                border-bottom: solid 1px var(--white);
+                                padding-bottom: 35px;
+                                &:hover {
+                                    color: var(--white);
+                                }
+                            }
+                            &.user__login__button {
+                                background-color: transparent;
+                                border: solid 1px var(--white);
+                                border-radius: 5px;
+                                @include flex-center();
+                                justify-content: center;
+                                a {
+                                    color: var(--white);
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    padding-bottom: 8px;
+                                    border-bottom: none;
+                                    &:hover {
+                                        color: var(--white);
+                                    }
+                                }
+                                &:hover {
+                                    background-color: transparent;
+                                    border: solid 1px var(--white);
+                                }
+                            }
+                        }
+                    }
+                    .header-social {
+                        margin-top: 50px;
+                        justify-content: center;
+                        gap: 30px;
                     }
                 }
             }
@@ -1080,38 +1178,52 @@ br.large {
                     }
                 }
                 #navbarNav {
+                    background-color: var(--very__dark__blue);
+                    padding: 30px;
                     justify-content: flex-end;
                     ul {
                         gap: 30px;
                         li {
                             a {
-                                font-size: 12px;
-                                color: var(--black);
+                                font-size: 16px;
+                                color: var(--white);
                                 text-transform: uppercase;
-                                font-weight: bold;
+                                text-align: center;
+                                font-weight: 100;
                                 letter-spacing: 2px;
+                                border-bottom: solid 1px var(--white);
+                                padding-bottom: 35px;
                                 &:hover {
-                                    color: var(--soft__red);
+                                    color: var(--white);
                                 }
                             }
                             &.user__login__button {
-                                background-color: var(--soft__red);
-                                border: solid 2px transparent;
+                                background-color: transparent;
+                                border: solid 1px var(--white);
                                 border-radius: 5px;
+                                @include flex-center();
+                                justify-content: center;
                                 a {
                                     color: var(--white);
                                     padding-left: 20px;
                                     padding-right: 20px;
+                                    padding-bottom: 8px;
+                                    border-bottom: none;
                                     &:hover {
-                                        color: var(--soft__red);
+                                        color: var(--white);
                                     }
                                 }
                                 &:hover {
-                                    background-color: var(--white);
-                                    border: solid 2px var(--soft__red);
+                                    background-color: transparent;
+                                    border: solid 1px var(--white);
                                 }
                             }
                         }
+                    }
+                    .header-social {
+                        margin-top: 50px;
+                        justify-content: center;
+                        gap: 30px;
                     }
                 }
             }
