@@ -468,15 +468,16 @@ br.large {
   font-style: italic;
   font-size: 14px;
 }
-#bookmark__page footer #footer__subscribe .content .input-group .button span button {
+#bookmark__page footer #footer__subscribe .content .input-group .button div button {
   padding-top: 10px;
   padding-bottom: 10px;
   border: solid 2px var(--soft__red);
   background-color: var(--soft__red);
   color: var(--white);
   font-weight: 500;
+  font-size: 16px;
 }
-#bookmark__page footer #footer__subscribe .content .input-group .button span button:hover {
+#bookmark__page footer #footer__subscribe .content .input-group .button div button:hover {
   background-color: var(--white);
   color: var(--soft__red);
 }
