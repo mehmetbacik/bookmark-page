@@ -901,6 +901,18 @@ br.large {
                         font-size: 16px;
                     }
                 }
+                .content {
+                    .input-group {
+                        .email {
+                            #emailError {
+                                position: absolute;
+                                width: 100%;
+                                top: -30px;
+                                bottom: auto;
+                            }
+                        }
+                    }
+                }
             }
             #footer__nav {
                 padding-top: 30px;
