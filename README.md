@@ -21,6 +21,9 @@ To clone the project, run the following commands:
 
 ```
 git clone https://github.com/mehmetbacik/bookmark-page.git
+```
+
+```
 cd bookmark-page
 ```
 
